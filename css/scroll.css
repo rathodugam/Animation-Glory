@@ -1,0 +1,345 @@
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* background-color: #775253; */
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline {
+    border-radius: 25px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    background-color: #d0ccd0;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.timeline__progress {
+    min-width: 15px;
+    z-index: 1;
+    border-radius: 500px;
+    position: absolute;
+    background-color: #f4989c;
+    height: 15px;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.2s ease;
+}
+
+.timeline__ball {
+    z-index: 2;
+    background-color: #d0ccd0;
+    height: 30px;
+    width: 30px;
+    border: 10px solid #d0ccd0;
+    background-color: white;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.timeline__ball.active {
+    border-color: #f4989c;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.header h2 {
+    text-align: center
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+
+.content {
+    padding: 100px 0;
+    margin: 50px auto 0 auto;
+    width: 80%;
+}
+
+
+
+
+
+.wrapper-progressBar {
+    width: 100%
+}
+
+.progressBar {}
+
+.progressBar li {
+    list-style-type: none;
+    float: left;
+    width: 33%;
+    position: relative;
+    text-align: center;
+}
+
+.progressBar li:before {
+    content: " ";
+    line-height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: white
+}
+
+.progressBar li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.progressBar li:first-child:after {
+    content: none;
+}
+
+.progressBar li.active {
+    color: dodgerblue;
+}
+
+.progressBar li.active:before {
+    border-color: dodgerblue;
+    background-color: dodgerblue
+}
+
+.progressBar li.active+li:after {
+    background-color: dodgerblue;
+}
+
+
+
+.fixed-box.fixed-bar {
+    top: 60px;
+    position: fixed;
+}
+
+.fixed-box {
+    padding: 0 0 1px 0;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    -webkit-transition: top 0.3s;
+    -o-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.process-block .title-c {
+    padding: 49px 0;
+    margin-left: 8.5%;
+    margin-right: 8.5%;
+    position: relative;
+    margin-bottom: 41px;
+}
+
+.process-block .title-c .underline {
+    height: 2px;
+    width: 100%;
+    background-color: #a2a6ad;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.blue-line {
+    height: 2px;
+    width: 0;
+    background-color: #1b57dd;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.process-block .title-c ul li {
+    cursor: pointer;
+    position: relative;
+    height: 33px;
+    font-family: "DIN Condensed";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #182643;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.process-block .title-c ul li span {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 0;
+    padding-top: 48px;
+}
+
+
+
+.process-block .title-c ul li {
+    cursor: pointer;
+    position: relative;
+    height: 33px;
+    font-family: "DIN Condensed";
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: #182643;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.process-block .title-c ul li.active,
+.process-block .title-c ul li:hover {
+    color: #1b57dd;
+}
+
+
+
+/* raj work */
+.car {
+    background-image: url("../images/car.jpeg");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    background-color: black;
+    height: 400px;
+    background-size: cover;
+    opacity: 0.9;
+    color: #fff;
+    padding: 6rem;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
