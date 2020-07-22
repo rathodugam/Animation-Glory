@@ -390,8 +390,17 @@ hr {
     margin-bottom: 85px;
 }
 
+.bg {
+    background-color: rgb(240, 240, 240);
+    clip-path: polygon(100% 69%, 100% 100%, 0 93%, 0 56%);
+    height: 300px;
+    position: relative;
+    margin-top: -6rem;
+    margin-bottom: -7rem;
+}
+
 .work {
-    background-color: #000;
+    background-color: #8051b3;
     padding: 1em;
 }
 
