@@ -53,7 +53,7 @@
                     <div class="collapse navbar-collapse" id="main_nav">
 
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#"> SERVICE </a></li>
+                            <li class="nav-item"><a class="nav-link" href="#service"> SERVICE </a></li>
                             <li class="nav-item"><a class="nav-link" href="page/project.html"> PROJECTS</a></li>
                             <li class="nav-item"><a class="nav-link" href="#"> CAREER</a></li>
                             <li class="nav-item"><a class="nav-link" href="#"> CONTACT US</a></li>
@@ -83,7 +83,7 @@
         </div>
         <img src="images/banner-after.png" class="img-responsive" width="100%">
     </section>
-    <section class="development">
+    <section class="development" id="service">
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 col-sm-4 wow bounceInLeft" data-wow-delay=".25s">
@@ -432,6 +432,7 @@
                 </div>
             </div>
         </div>
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     </footer>
     <!-- navigation bar script  -->
     <script type="text/javascript">
@@ -461,6 +462,28 @@
     </script>
     <!-- animation  -->
     <script src="js/animation.js"></script>
+    <script>
+        /*Scroll to top when arrow up clicked BEGIN*/
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+        });
+        $(document).ready(function () {
+            $("#back2Top").click(function (event) {
+                event.preventDefault();
+                $("html, body").animate({
+                    scrollTop: 0
+                }, "slow");
+                return false;
+            });
+
+        });
+        /*Scroll to top when arrow up clicked END*/
+    </script>
 
 </body>
 
