@@ -99,12 +99,19 @@
 /* indicatore  */
 #indicator {
     position: fixed;
-    top: 3.5rem;
+    top: 3.9rem;
     left: 0;
     height: 10px;
     background-color: black;
     z-index: 999;
     scroll-behavior: smooth;
+}
+
+@media (max-width:520px) {
+    #indicator {
+        top: 6.5rem;
+
+    }
 }
 
 /* end indicatore  */
@@ -916,4 +923,75 @@ a {
 #back2Top:hover {
     background-color: #DDF;
     color: #000;
+}
+
+
+
+/* job page  */
+.panel-default {
+    border-color: #ddd;
+}
+
+.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin: 1rem;
+}
+
+.job-font {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rules {
+    padding: 1em;
+}
+
+.panel a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    margin-bottom: 1em;
+}
+
+.boxc {
+    padding: 1em;
+    border: solid black;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 5px 5px#888888;
+}
+
+.boxc a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxc a:hover {
+    color: blue;
+
+}
+
+.zoom {
+    transition: transform 1.2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.nicecolor {
+    background-color: #fff;
+}
+
+.nicecolor:hover {
+    background-color: rgb(219, 207, 207) !important;
 }
