@@ -209,6 +209,12 @@
     padding: 1rem;
 }
 
+@media(max-width:520px) {
+    .heading {
+        margin-top: 4rem;
+    }
+}
+
 @media (max-width: 991px) {
 
     #portfolio .section-heading {
