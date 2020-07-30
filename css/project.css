@@ -932,6 +932,14 @@ a {
     border-color: #ddd;
 }
 
+.panel-heading a {
+    color: #007bff;
+}
+
+.panel-collapse {
+    border: 1px solid #ddd !important;
+}
+
 .panel-heading {
     color: #333;
     background-color: #f5f5f5;
@@ -994,4 +1002,14 @@ a {
 
 .nicecolor:hover {
     background-color: rgb(219, 207, 207) !important;
+}
+
+@media (max-width:520px) {
+    .menu-nav {
+        color: black !important;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
 }

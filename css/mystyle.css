@@ -815,3 +815,13 @@ hr {
     background-color: #DDF;
     color: #000;
 }
+
+@media (max-width:520px) {
+    .fixed-top .menu-nav {
+        color: black !important;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
